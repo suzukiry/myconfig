@@ -1,0 +1,61 @@
+Host op
+    User         pocadmin               
+    HostName     13.78.51.197 
+    Port         22                      
+    IdentityFile ~/.ssh/id_rsa
+
+Host utilgw
+    User         pocadmin                 
+    HostName     rsuzuki-utilgw.internal.cloudapp.net 
+    Port         22                        
+    IdentityFile ~/.ssh/id_rsa
+    ProxyCommand ssh op -W %h:%p
+
+Host ma01
+    User         pocadmin                 
+    HostName     rsuzuki-ma01.internal.cloudapp.net 
+    Port         22                        
+    IdentityFile ~/.ssh/id_rsa
+    ProxyCommand ssh op -W %h:%p
+
+Host wo01
+    User         pocadmin                 
+    HostName     rsuzuki-wo01.internal.cloudapp.net 
+    Port         22                        
+    IdentityFile ~/.ssh/id_rsa
+    ProxyComwond ssh op -W %h:%p
+
+Host wo02
+    User         pocadmin                 
+    HostName     rsuzuki-wo02.internal.cloudapp.net 
+    Port         22                        
+    IdentityFile ~/.ssh/id_rsa
+    ProxyComwond ssh op -W %h:%p
+
+Host wo03
+    User         pocadmin                 
+    HostName     rsuzuki-wo03.internal.cloudapp.net 
+    Port         22                        
+    IdentityFile ~/.ssh/id_rsa
+    ProxyComwond ssh op -W %h:%p
+
+Host ka01
+    User         pocadmin                 
+    HostName     rsuzuki-ka01.internal.cloudapp.net 
+    Port         22                        
+    IdentityFile ~/.ssh/id_rsa
+    ProxyComkand ssh op -W %h:%p
+
+Host ka02
+    User         pocadmin                 
+    HostName     rsuzuki-ka02.internal.cloudapp.net 
+    Port         22                        
+    IdentityFile ~/.ssh/id_rsa
+    ProxyComkand ssh op -W %h:%p
+
+Host ka03
+    User         pocadmin                 
+    HostName     rsuzuki-ka03.internal.cloudapp.net 
+    Port         22                        
+    IdentityFile ~/.ssh/id_rsa
+    ProxyComkand ssh op -W %h:%p
